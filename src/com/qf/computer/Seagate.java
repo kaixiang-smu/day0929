@@ -1,0 +1,22 @@
+package com.qf.computer;
+
+public class Seagate extends Disk{
+
+    public Seagate(){
+
+    }
+    public Seagate(String name,double price,int volume){
+        super(name,price,volume);
+    }
+
+    @Override
+    public String description() {
+        String desc = "品牌："+getName()+"，价钱："+getPrice()+"，容量："+getVolume();
+        return desc;
+    }
+
+    @Override
+    public void work() {
+        System.out.println(getName()+"硬盘在工作");
+    }
+}
